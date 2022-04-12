@@ -1,0 +1,123 @@
+\hypertarget{student_8c}{}\doxysection{student.\+c File Reference}
+\label{student_8c}\index{student.c@{student.c}}
+
+
+\mbox{\hyperlink{student_8c}{student.\+c}} contains all the functions that involve either accessing or changing the student\textquotesingle{}s information  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}student.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{student_8c_a1ee4302d01d8908db57e238f5f9dd9f5}{add\+\_\+grade}} (\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student, double grade)
+\begin{DoxyCompactList}\small\item\em add\+\_\+grade function adds each grade percentage to the list of grades within the Student data type for that specific student \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{student_8c_a3efb000301e4e0c8e68930bc93e0958e}{average}} (\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em The average function calculates the total average a student has within the course. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{student_8c_a4d964bf73eb1b291728dbf7380a9e6ab}{print\+\_\+student}} (\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em The function print\+\_\+student prints out the student\textquotesingle{}s name, student ID, list of grades, and the average the student has within the course. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$ \mbox{\hyperlink{student_8c_ad0f523c2c17c9b40389cd8031052fc85}{generate\+\_\+random\+\_\+student}} (int grades)
+\begin{DoxyCompactList}\small\item\em The function generate\+\_\+random\+\_\+student randomly generates a student with all its information randomly generated encolosed within the Student data type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{student_8c}{student.\+c}} contains all the functions that involve either accessing or changing the student\textquotesingle{}s information 
+
+\begin{DoxyAuthor}{Author}
+Emaan Khan (\href{mailto:khanm345@mcmaster.ca}{\texttt{ khanm345@mcmaster.\+ca}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/04-\/10
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{student_8c_a1ee4302d01d8908db57e238f5f9dd9f5}\label{student_8c_a1ee4302d01d8908db57e238f5f9dd9f5}} 
+\index{student.c@{student.c}!add\_grade@{add\_grade}}
+\index{add\_grade@{add\_grade}!student.c@{student.c}}
+\doxysubsubsection{\texorpdfstring{add\_grade()}{add\_grade()}}
+{\footnotesize\ttfamily void add\+\_\+grade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student,  }\item[{double}]{grade }\end{DoxyParamCaption})}
+
+
+
+add\+\_\+grade function adds each grade percentage to the list of grades within the Student data type for that specific student 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & A specific student with all its information enclosed within the Student data type \\
+\hline
+{\em grade} & The grade the student has \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+calloc is used to create an empty list of size one if the number of grades is 1
+
+realloc is used to allocate more space within the list of grades to add in a new grade\mbox{\Hypertarget{student_8c_a3efb000301e4e0c8e68930bc93e0958e}\label{student_8c_a3efb000301e4e0c8e68930bc93e0958e}} 
+\index{student.c@{student.c}!average@{average}}
+\index{average@{average}!student.c@{student.c}}
+\doxysubsubsection{\texorpdfstring{average()}{average()}}
+{\footnotesize\ttfamily double average (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+The average function calculates the total average a student has within the course. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & A specific student with all its information enclosed within the Student data type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double-\/precision floating point number which is the student\textquotesingle{}s grade average within the course 
+\end{DoxyReturn}
+This for loop adds all the grades together and stores it into total variable\mbox{\Hypertarget{student_8c_ad0f523c2c17c9b40389cd8031052fc85}\label{student_8c_ad0f523c2c17c9b40389cd8031052fc85}} 
+\index{student.c@{student.c}!generate\_random\_student@{generate\_random\_student}}
+\index{generate\_random\_student@{generate\_random\_student}!student.c@{student.c}}
+\doxysubsubsection{\texorpdfstring{generate\_random\_student()}{generate\_random\_student()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$ generate\+\_\+random\+\_\+student (\begin{DoxyParamCaption}\item[{int}]{grades }\end{DoxyParamCaption})}
+
+
+
+The function generate\+\_\+random\+\_\+student randomly generates a student with all its information randomly generated encolosed within the Student data type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grades} & The number of grades the student will have \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A specific student with all its information enclosed within the Student data type 
+\end{DoxyReturn}
+The new\+\_\+student\textquotesingle{}s first and last name is randomely chosen from the first\+\_\+names and last\+\_\+names list
+
+This for loop generates a random 10 digit integer and converts each integer into a string per iteration
+
+This for loop generates a random integer in each iteration and calls the add\+\_\+grade function to add the grade to the student\textquotesingle{}s list of grades\mbox{\Hypertarget{student_8c_a4d964bf73eb1b291728dbf7380a9e6ab}\label{student_8c_a4d964bf73eb1b291728dbf7380a9e6ab}} 
+\index{student.c@{student.c}!print\_student@{print\_student}}
+\index{print\_student@{print\_student}!student.c@{student.c}}
+\doxysubsubsection{\texorpdfstring{print\_student()}{print\_student()}}
+{\footnotesize\ttfamily void print\+\_\+student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{student_8h_ac91ec92866bb82e1ee36c75280929c43}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+The function print\+\_\+student prints out the student\textquotesingle{}s name, student ID, list of grades, and the average the student has within the course. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & A specific student with all its information enclosed within the Student data type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+This for loop is used to print all the student\textquotesingle{}s grades
